@@ -8,8 +8,8 @@ align-items:center ;
 flex-direction : row ;
 justify-content : space-between ;
 width : 100% ;
-height : 60px ;
-padding : 0px 0px 0px 10px ;
+height : 70px ;
+padding : 10px 0px 0px 10px ;
 background : #ededed ;
 `;
 

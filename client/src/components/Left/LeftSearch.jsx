@@ -6,9 +6,9 @@ background-color : #f7f7f7;
 display : flex ;
 align-items : center ;
 justify-content : center ;
-height : 60px ;
-padding : 0px 10px 0px 10px ;
-margin-bottom : 10px ;
+height : 80px ;
+width : 100% ;
+padding : 10px 15px 10px 15px ;
 `;
 
 const Wrapper = styled.div`

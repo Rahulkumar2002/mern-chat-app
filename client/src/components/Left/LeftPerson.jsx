@@ -2,16 +2,17 @@ import { DoneAll, ExpandMore } from '@mui/icons-material';
 import styled from 'styled-components';
 
 const Container = styled.div`
-margin-top : 10px ;
+margin-top : 5px ;
 display : flex ;
 align-items : center ;
 justify-content : center ;
 width : 100% ;
 cursor : pointer ;
-height : 60px ;
+height : 80px ;
 &:hover{
     background-color : #ededed ;
 }
+border-bottom : 1px solid rgba(0 , 0 , 0, 0.3) ;
 `;
 const SettingArrow = styled.div`
 display : none ;
@@ -35,8 +36,8 @@ const ImgContainer = styled.div`
 display : flex ;
 align-items : center ;
 flex : 0.3 ;
-width : 60px ;
-height : 60px ;
+width : 55px ;
+height : 55px ;
 border-radius : 50% ;
 `;
 const Img = styled.img`
@@ -89,7 +90,11 @@ margin-right : 5px ;
 const LastMsg = styled.div`
 
 `;
-const Hr = styled.hr``;
+// const Hr = styled.hr`
+//  height : 1px ;
+//  width : 90% ;
+//  background : color : grey ;
+// `;
 
 const LeftPerson = () => {
     return (
@@ -101,7 +106,7 @@ const LeftPerson = () => {
                 <TextContainer>
                     <NameContainer>
                         <PersonNameContainer>
-                            MSIT UNOFFICIAL
+                            Rahul Kumar
                         </PersonNameContainer>
                         <TimeContainer>
                             12:41PM
@@ -118,9 +123,9 @@ const LeftPerson = () => {
                             <ExpandMore style={{ fontSize: "25px" }} />
                         </SettingArrow>
                     </LastMsgContainer>
+                    {/* <Hr /> */}
                 </TextContainer>
             </Wrapper>
-            <Hr />
         </Container>
     );
 };
