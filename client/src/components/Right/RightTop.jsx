@@ -2,13 +2,13 @@ import { MoreVert, Search } from '@mui/icons-material';
 import styled from 'styled-components';
 
 const Container = styled.div`
-height : 55px ;
+height : 70px ;
 background-color : #ededed;
 width : 100% ;
 display : flex ;
 flex-direction : row ;
-aling-items : center ;
-postion : sticky ;
+align-items : center ;
+position : sticky ;
 `;
 const ImageContainer = styled.div`
 height : 45px ;
