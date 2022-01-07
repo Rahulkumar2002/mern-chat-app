@@ -173,13 +173,13 @@ const Register = () => {
                     <Form >
                         <InputBox>
                             <InputContainer>
-                                <Input placeholder="Username" />
+                                <Input placeholder="Username" required />
                             </InputContainer>
                             <InputContainer>
-                                <Input type="email" placeholder="Email" />
+                                <Input type="email" placeholder="Email" required />
                             </InputContainer>
                             <InputContainer>
-                                <Input type="password" placeholder="Password" />
+                                <Input type="password" placeholder="Password" required minLength="6" />
                             </InputContainer>
                         </InputBox>
                         <RegisterButtonContainer>

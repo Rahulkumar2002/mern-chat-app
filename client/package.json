@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.0.0",
-  "proxy":"http://localhost:8080/api",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -26,5 +25,6 @@
     "sass": "^1.45.2",
     "vite": "^2.7.2",
     "vite-preset-react": "^2.2.0"
-  }
+  },
+  "proxy": "http://localhost:8080/api"
 }

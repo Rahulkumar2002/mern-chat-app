@@ -1,4 +1,7 @@
 import styled from 'styled-components';
+import { useContext, useRef } from 'react';
+import { AuthContext } from '../context/AuthContext';
+import { loginCall } from '../apiCalls';
 
 const Container = styled.div`
 flex : 1 ;
@@ -156,6 +159,18 @@ color : black ;
 }
 `;
 const Login = () => {
+
+    const username = useRef();
+    const password = useRef();
+    const { user, isFetching, error, dispatch } = useContext(AuthContext);
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        loginCall({ username: username.current.value, password: password.current.value }, dispatch);
+    }
+    console.log(user);
+    console.log(error);
+
     return (
         <Container>
             <LoginTop>
@@ -170,13 +185,13 @@ const Login = () => {
                     <LoginText>
                         To use Chat App in your computer Login here:
                     </LoginText>
-                    <Form >
+                    <Form onSubmit={handleClick}>
                         <InputBox>
                             <InputContainer>
-                                <Input placeholder="Username" />
+                                <Input placeholder="Username" ref={username} required />
                             </InputContainer>
                             <InputContainer>
-                                <Input type="password" placeholder="Password" />
+                                <Input type="password" placeholder="Password" required ref={password} />
                             </InputContainer>
                         </InputBox>
                         <LoginButtonContainer>
